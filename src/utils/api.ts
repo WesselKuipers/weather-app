@@ -1,7 +1,5 @@
 import axios from 'axios';
 import { WeatherResponse, CityResponse, Coordinates } from '@/types';
-import cityResponse from './fixtures/cityResponse.json';
-import weatherResponse from './fixtures/weatherResponse.json';
 
 /**
  * Fetch the current weather from OpenWeatherMap
@@ -40,12 +38,4 @@ export async function fetchCity(coordinates: Coordinates): Promise<CityResponse>
 
   const [result] = data;
   return result;
-}
-
-export function fetchWeatherMock(): WeatherResponse {
-  return weatherResponse;
-}
-
-export function fetchCityMock(): CityResponse {
-  return cityResponse;
 }

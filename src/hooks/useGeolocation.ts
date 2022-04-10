@@ -1,5 +1,11 @@
 import { useCallback, useEffect, useState } from 'react';
-import { Coordinates, GeoLocation } from '@/types';
+import { Coordinates } from '@/types';
+
+interface GeoLocation {
+  coordinates?: Coordinates;
+  error?: string;
+  fetchCoordinates: () => void;
+}
 
 /**
  * A hook that fetches the user’s geolocation.

@@ -21,4 +21,4 @@ npm ci
 npm run dev
 ```
 
-By default the app will require a valid API key as well as an active internet connection.
+By default the app will require a valid API key as well as an active internet connection. To allow for offline development, you can set the property `VITE_API_MOCK` in `.env` to `true`. Doing so will enable a worker that will replace all API calls with a mocked response based on the responses found in `./utils/fixtures/[response].json`.
