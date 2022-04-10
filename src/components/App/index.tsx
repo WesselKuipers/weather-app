@@ -7,9 +7,8 @@ import {
   Paper,
 } from '@mantine/core';
 import { useColorScheme, useHotkeys, useLocalStorage } from '@mantine/hooks';
-import { Weather } from '@/components/Weather';
+import { Weather, Settings } from '@/components';
 import styles from './index.module.css';
-import { ThemeButton } from '../ThemeButton';
 
 const queryClient = new QueryClient();
 
@@ -41,9 +40,7 @@ export function App() {
       <MantineProvider theme={theme}>
         <QueryClientProvider client={queryClient}>
           <Paper p="md" radius={0} className={styles.container}>
-            <div className={styles.settings}>
-              <ThemeButton />
-            </div>
+            <Settings />
             <Weather />
           </Paper>
         </QueryClientProvider>
