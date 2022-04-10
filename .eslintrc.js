@@ -24,6 +24,13 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'import/prefer-default-export': 'off',
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
-    'import/extensions': ['error', 'never'],
+    'import/extensions': [
+      'error',
+      'never',
+      {
+        svg: 'always',
+        json: 'always',
+      },
+    ],
   },
 };
