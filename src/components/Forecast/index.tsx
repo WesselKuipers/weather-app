@@ -12,7 +12,7 @@ function ForecastCard({ forecast }: { forecast: DailyForecast }): ReactElement {
   const Icon = resolveIcon(forecast.weather[0].icon);
 
   return (
-    <Card key={forecast.dt}>
+    <Card withBorder shadow="xs" radius="md" key={forecast.dt}>
       <Text weight="bold" align="center" title={date.toLocaleString()}>
         {date.toLocaleDateString('en-US', { weekday: 'long' })}
       </Text>

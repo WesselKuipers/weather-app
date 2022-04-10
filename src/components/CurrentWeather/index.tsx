@@ -13,7 +13,7 @@ export function CurrentWeather({ current, city }: CurrentWeatherProps): ReactEle
   const date = new Date(current.dt * 1000);
 
   return (
-    <Card radius="md" shadow="lg">
+    <Card radius="xs" shadow="md" withBorder>
       <Grid align="center" gutter="xl">
         <Grid.Col span={4}>
           <Center>
