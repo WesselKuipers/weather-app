@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 import { App } from '@/components';
 import { setupMockWorker } from '@/utils/mocks';
+import './i18n';
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);

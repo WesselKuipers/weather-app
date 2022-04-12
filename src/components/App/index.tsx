@@ -9,6 +9,7 @@ import {
 import { useColorScheme, useHotkeys, useLocalStorage } from '@mantine/hooks';
 import { Weather, Settings } from '@/components';
 import styles from './index.module.css';
+import { UnitProvider } from '@/hooks/useUnit';
 
 const queryClient = new QueryClient();
 
@@ -39,10 +40,12 @@ export function App() {
     <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
       <MantineProvider theme={theme}>
         <QueryClientProvider client={queryClient}>
-          <Paper p="md" radius={0} className={styles.container}>
-            <Settings />
-            <Weather />
-          </Paper>
+          <UnitProvider>
+            <Paper p="md" radius={0} className={styles.container}>
+              <Settings />
+              <Weather />
+            </Paper>
+          </UnitProvider>
         </QueryClientProvider>
       </MantineProvider>
     </ColorSchemeProvider>

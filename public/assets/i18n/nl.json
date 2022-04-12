@@ -1,0 +1,11 @@
+{
+  "geoErrorTitle": "Locatiegegevens toestaan",
+  "geoError": "Om het huidige weer op te halen, moet je de locatiegegevens-toestemming van uw browser inschakelen.",
+  "today": "Vandaag",
+  "feelsLike": "Gevoelstemperatuur: {{temperature}}",
+  "min": "Min",
+  "max": "Max",
+  "toggleTheme": "Toggle color scheme",
+  "kph": "km/u",
+  "mph": "m/u"
+}

@@ -1,0 +1,11 @@
+{
+  "geoErrorTitle": "Please enable GeoLocation Permission",
+  "geoError": "In order to be able to fetch the current weather, you must enable your browser’s GeoLocation permission.",
+  "today": "Today",
+  "feelsLike": "Feels like {{temperature}}",
+  "min": "Min",
+  "max": "Max",
+  "toggleTheme": "Toggle color scheme",
+  "kph": "km/h",
+  "mph": "mp/h"
+}

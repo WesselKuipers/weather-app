@@ -2,5 +2,8 @@ export * from './App';
 export * from './Weather';
 export * from './CurrentWeather';
 export * from './Forecast';
+export * from './ForecastCard';
 export * from './ThemeButton';
 export * from './Settings';
+export * from './LanguageSelectItem';
+export * from './LanguageSelect';

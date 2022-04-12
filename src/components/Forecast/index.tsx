@@ -1,30 +1,20 @@
 import { ReactElement } from 'react';
-import { Card, Text, Center, Grid } from '@mantine/core';
+import { Grid } from '@mantine/core';
 import { DailyForecast } from '@/types';
-import { resolveIcon } from '@/utils/resolveIcon';
+import { ForecastCard } from '@/components';
 
 interface ForecastProps {
+  /**
+   * The list of daily forecasts.
+   *
+   * This should be filtered beforehand.
+   */
   forecast: DailyForecast[];
 }
 
-function ForecastCard({ forecast }: { forecast: DailyForecast }): ReactElement {
-  const date = new Date(forecast.dt * 1000);
-  const Icon = resolveIcon(forecast.weather[0].icon);
-
-  return (
-    <Card withBorder shadow="xs" radius="md" key={forecast.dt}>
-      <Text weight="bold" align="center" title={date.toLocaleString()}>
-        {date.toLocaleDateString('en-US', { weekday: 'long' })}
-      </Text>
-      <Center>
-        <Icon title={forecast.weather[0].description} color="#FFFFFF" size={70} />
-      </Center>
-      <Text align="center">Min: {Math.round(forecast.temp.min)}°C</Text>
-      <Text align="center">Max: {Math.round(forecast.temp.max)}°C</Text>
-    </Card>
-  );
-}
-
+/**
+ * The container for the weekly forecast.
+ */
 export function Forecast({ forecast }: ForecastProps): ReactElement {
   return (
     <Grid columns={15} justify="center">
