@@ -46,7 +46,7 @@ jobs:
         with:
           node-version: 16
       - run: npm ci
-      - run: npx stylelint --report-needless-disables
+      - run: npx stylelint --report-needless-disables .
 
   test:
     runs-on: ubuntu-latest
