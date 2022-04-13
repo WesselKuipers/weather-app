@@ -7,7 +7,7 @@
     "build": "tsc && vite build",
     "prettier": "prettier --check",
     "preview": "vite preview",
-    "stylelint": "stylelint --report-needless-disables",
+    "stylelint": "stylelint --report-needless-disables **/*.css",
     "eslint": "eslint .",
     "test": "vitest"
   },
