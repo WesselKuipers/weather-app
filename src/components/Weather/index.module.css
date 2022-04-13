@@ -3,7 +3,7 @@
   flex-direction: column; */
   width: 100%;
   max-width: 960px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   flex: 1;
