@@ -69,8 +69,7 @@ export function CurrentWeather({ current, daily, city }: CurrentWeatherProps): R
               backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.white,
             }}
             withBorder
-            shadow="xs"
-          >
+            shadow="xs">
             <Center>
               <Stack spacing={0}>
                 <Text>{t('min')}:</Text>
@@ -87,8 +86,7 @@ export function CurrentWeather({ current, daily, city }: CurrentWeatherProps): R
               backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.white,
             }}
             withBorder
-            shadow="xs"
-          >
+            shadow="xs">
             <Center>
               <Stack spacing={0}>
                 <Text>{t('max')}:</Text>
@@ -105,8 +103,7 @@ export function CurrentWeather({ current, daily, city }: CurrentWeatherProps): R
               backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.white,
             }}
             withBorder
-            shadow="xs"
-          >
+            shadow="xs">
             <Center>
               <Stack spacing={0}>
                 <WiWindDeg
@@ -128,8 +125,7 @@ export function CurrentWeather({ current, daily, city }: CurrentWeatherProps): R
               backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.white,
             }}
             withBorder
-            shadow="xs"
-          >
+            shadow="xs">
             <Center>
               <Stack spacing={0}>
                 <WiRain

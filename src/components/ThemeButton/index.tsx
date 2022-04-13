@@ -15,8 +15,7 @@ export function ThemeButton(): ReactElement {
       variant="outline"
       color={colorScheme === 'dark' ? 'yellow' : 'blue'}
       onClick={() => toggleColorScheme()}
-      title={t('toggleTheme')}
-    >
+      title={t('toggleTheme')}>
       {colorScheme === 'dark' ? <WiDaySunny size={18} /> : <WiMoonAltWaxingCrescent4 size={18} />}
     </ActionIcon>
   );

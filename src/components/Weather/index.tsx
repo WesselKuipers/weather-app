@@ -94,14 +94,12 @@ export function Weather(): ReactElement {
         withCloseButton={false}
         shadow="xs"
         padding={0}
-        onClose={() => {}}
-      >
+        onClose={() => {}}>
         <Alert
           variant="filled"
           icon={<FaExclamationTriangle />}
           title={t('geoErrorTitle')}
-          color="red"
-        >
+          color="red">
           <Text>{t('geoError')}</Text>
         </Alert>
       </Modal>
