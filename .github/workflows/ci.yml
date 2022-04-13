@@ -47,3 +47,14 @@ jobs:
           node-version: 16
       - run: npm ci
       - run: npx stylelint --report-needless-disables
+
+  build:
+    needs: [stylelint, tsc, prettier, eslint]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+      - run: npm ci
+      - run: npm run build
