@@ -24,6 +24,9 @@ interface CurrentWeatherProps {
   city: CityResponse;
 }
 
+/**
+ * Component for displaying the current temperature, weather icon, date, city, wind, and chance of precipitation.
+ */
 export function CurrentWeather({ current, daily, city }: CurrentWeatherProps): ReactElement {
   const { t, i18n } = useTranslation();
   const { unit } = useUnit();

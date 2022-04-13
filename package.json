@@ -8,7 +8,7 @@
     "prettier": "prettier --check",
     "preview": "vite preview",
     "stylelint": "stylelint --report-needless-disables",
-    "eslint": "eslint",
+    "eslint": "eslint .",
     "test": "jest"
   },
   "dependencies": {
