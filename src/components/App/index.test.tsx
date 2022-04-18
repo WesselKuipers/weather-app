@@ -9,7 +9,8 @@ import '@/i18n/test';
 const server = setupServer(...handlers);
 
 async function renderApp() {
-  const result = render(<App />);
+  // For these tests we don’t need React 18’s concurrent API.
+  const result = render(<App />, { legacyRoot: true });
   await waitFor(() =>
     // getAllByTitle throws an error if it cannot find an element
     screen.getAllByTitle('broken clouds'),
