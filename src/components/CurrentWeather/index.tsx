@@ -75,7 +75,7 @@ export function CurrentWeather({ current, daily, city }: CurrentWeatherProps): R
               <Stack spacing={0}>
                 <Text>{t('min')}:</Text>
                 <Text>
-                  {Math.round(convertTemperature(daily.temp.min))}°{unit}
+                  {Math.round(convertTemperature(daily.temp.min, unit))}°{unit}
                 </Text>
               </Stack>
             </Center>
@@ -93,7 +93,7 @@ export function CurrentWeather({ current, daily, city }: CurrentWeatherProps): R
               <Stack spacing={0}>
                 <Text>{t('max')}:</Text>
                 <Text>
-                  {Math.round(convertTemperature(daily.temp.max))}°{unit}
+                  {Math.round(convertTemperature(daily.temp.max, unit))}°{unit}
                 </Text>
               </Stack>
             </Center>

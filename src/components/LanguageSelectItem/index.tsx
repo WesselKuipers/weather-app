@@ -23,7 +23,9 @@ export const LanguageSelectItem = forwardRef<HTMLDivElement, LanguageSelectItemP
       <Group noWrap>
         <Image radius={0} width={32} src={image} />
         <div>
-          <Text size="sm">{label}</Text>
+          <Text title={label} size="sm">
+            {label}
+          </Text>
         </div>
       </Group>
     </div>
