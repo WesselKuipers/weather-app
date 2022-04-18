@@ -90,13 +90,13 @@ describe('App', () => {
   it('should switch the language', async () => {
     await renderApp();
 
-    const feelsLikeEN = screen.findByText('Feels like 9°C');
+    const feelsLikeEN = screen.findByText('Feels like', { exact: false });
     const mondayEN = screen.findByText('Monday');
 
     await userEvent.click(await screen.findByLabelText('Select language'));
     await userEvent.click(await screen.findByText('Nederlands'));
 
-    const feelsLikeNL = screen.findByText('Gevoelstemperatuur: 9°C');
+    const feelsLikeNL = screen.findByText('Gevoelstemperatuur:', { exact: false });
     const mondayNL = screen.findByText('Maandag');
 
     expect(feelsLikeEN).toBeDefined();
