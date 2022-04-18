@@ -62,7 +62,7 @@ describe('App', () => {
     const celcius = screen.findByText('Feels like 9°C');
     const kmh = screen.findByText('15 km/h');
 
-    userEvent.click(await screen.findByText('°F'));
+    await userEvent.click(await screen.findByText('°F'));
 
     const fahrenheit = screen.findByText('Feels like 48°F');
     const mph = screen.findByText('2 mph');
